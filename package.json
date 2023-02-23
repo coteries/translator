@@ -1,0 +1,42 @@
+{
+  "name": "coteries-translator",
+  "version": "0.1.0",
+  "description": "Translate your apps using google sheets as CRM",
+  "main": "index.js",
+  "bin": {
+    "translator-cli": "./bin/index.js"
+  },
+  "scripts": {
+    "start": "rollup -c --bundleConfigAsCjs -w",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "build": "rollup -c --bundleConfigAsCjs"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/preset-env": "^7.20.2",
+    "@jest/globals": "^29.4.1",
+    "@rollup/plugin-commonjs": "^24.0.1",
+    "@rollup/plugin-json": "^6.0.0",
+    "@rollup/plugin-node-resolve": "^15.0.1",
+    "@rollup/plugin-replace": "^5.0.2",
+    "@rollup/plugin-typescript": "^11.0.0",
+    "@types/node": "^18.11.18",
+    "babel-jest": "^29.4.1",
+    "jest": "^29.4.1",
+    "prettier": "^2.8.3",
+    "rollup": "^3.12.0",
+    "rollup-plugin-auto-external": "^2.0.0",
+    "rollup-plugin-copy": "^3.4.0",
+    "rollup-plugin-preserve-shebang": "^1.0.1",
+    "ts-jest": "^29.0.5",
+    "tslib": "^2.5.0",
+    "typescript": "^4.9.4"
+  },
+  "dependencies": {
+    "chalk": "5.2.0",
+    "googleapis": "110.0.0"
+  },
+  "serviceAccount": "[service-account-file.json]"
+}
